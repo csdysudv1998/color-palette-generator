@@ -1,0 +1,3 @@
+# Example palette
+# Format: HEX codes
+# Generated palettes will appear here.
