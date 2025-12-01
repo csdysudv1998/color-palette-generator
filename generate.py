@@ -1,0 +1,11 @@
+import random
+
+def random_color():
+    return "#{:06x}".format(random.randint(0, 0xFFFFFF))
+
+palette = [random_color() for _ in range(5)]
+
+with open("palettes/default.txt", "a") as f:
+    f.write(" ".join(palette) + "\n")
+
+print("Generated palette:", palette)
